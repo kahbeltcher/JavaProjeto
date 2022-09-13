@@ -8,7 +8,6 @@ import java.util.Scanner;
  */
 public class Computador {
 
-    //Instanciando scanner
     Scanner sc = new Scanner(System.in);
     //Atributos
     public int armazenamento,memoria;
