@@ -4,23 +4,22 @@ import java.util.Scanner;
 
 /**
  *
- * @author karen silva matricula:20211303170 aula: Programação orientada a
- * objeto
+ * @author kah
  */
 public class Computador {
+
     //Instanciando scanner
     Scanner sc = new Scanner(System.in);
     //Atributos
-    private int armazenamento, memoria;
-    private String sistema, processador, marca;
+    public int armazenamento,memoria;
+    public String sistema,processador,marca;
 
     //Construtores
-    public Computador() {
-        //default
+    public Computador(){
+        
     }
 
     public Computador(int armazenamento, int memoria, String sistema, String processador, String marca) {
-        super();
         this.armazenamento = armazenamento;
         this.memoria = memoria;
         this.sistema = sistema;
@@ -73,7 +72,6 @@ public class Computador {
     //ENTRADA DE DADOS
     public void entradaDados() {
         //ARMAZENAMENTO
-
         System.out.print("Insira a quantidade de armazenamento do computador: ");
         armazenamento = Integer.parseInt(sc.nextLine());
         //MEMORIA
@@ -93,11 +91,11 @@ public class Computador {
     //SAIDA DE DADOS
     public void imprimir() {
         System.out.println(
-            "\nArmazenamento: " + armazenamento + "GB"
-            + "\nMemoria: " + memoria + " GB"
-            + "\nSistema: " + sistema
-            + "\nProcessador: " + processador
-            + "\nMarca: " + marca
+        "\nArmazenamento: " + armazenamento + "GB"
+        + "\nMemoria: " + memoria + " GB"
+        + "\nSistema: " + sistema
+        + "\nProcessador: " + processador
+        + "\nMarca: " + marca
         );
     }
 }
