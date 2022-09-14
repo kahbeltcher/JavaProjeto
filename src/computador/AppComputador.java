@@ -1,37 +1,51 @@
 package computador;
 
+import java.util.Scanner;
+
 /**
  *
  * @author kah
  */
-public class AppComputador {
-        public static void main(String[] args) {
+public class AppComputador extends Computador {
+
+    public static void main(String[] args) {
+
         Computador pc1 = new Computador();
         Computador pc2 = new Computador();
-        Computador pc3 = new Computador(1000,8,"windows","intel i7","dell");
-        Computador pc4 = new Computador(500,6,"Linux","Celeron 3","Lenovo");
-           
-        //Entrada de dados        
-        System.out.println("PC1");
+
         pc1.entradaDados();
-        System.out.println("----------------------------");
-        System.out.println("PC2");
         pc2.entradaDados();
-        System.out.println("----------------------------");
-        
-        //Saida de dados
-        System.out.println("PC1:");
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("------------------------------------");
+        System.out.print("Insira a quantidade de armazenamento do computador: ");
+        int armazenamento = Integer.parseInt(sc.nextLine());        
+        System.out.print("Insira a quantidade de memoria do computador: ");
+        int memoria =Integer.parseInt(sc.nextLine());
+        System.out.print("Insira o processador do computador: ");
+        String processador = sc.nextLine();
+        System.out.print("Insira o sistema operacional do computador: ");
+        String sistema = sc.nextLine();
+        System.out.print("Insira a Marca do computador: ");
+        String marca = sc.nextLine();
+        Computador pc3 = new Computador(armazenamento,memoria,sistema,processador,marca);
+        System.out.println("------------------------------------");
+        System.out.print("Insira a quantidade de armazenamento do computador: ");
+        armazenamento = Integer.parseInt(sc.nextLine());        
+        System.out.print("Insira a quantidade de memoria do computador: ");
+        memoria =Integer.parseInt(sc.nextLine());
+        System.out.print("Insira o processador do computador: ");
+        processador = sc.nextLine();
+        System.out.print("Insira o sistema operacional do computador: ");
+        sistema = sc.nextLine();
+        System.out.print("Insira a Marca do computador: ");
+        marca = sc.nextLine();
+        Computador pc4 = new Computador(armazenamento,memoria,sistema,processador,marca);
+        System.out.println("------------------------------------");
+
         pc1.imprimir();
-        System.out.println("----------------------------");
-        System.out.println("PC2:");
         pc2.imprimir();
-        
-        System.out.println("----------------------------");
-         System.out.println("PC3:");
         pc3.imprimir();
-        System.out.println("----------------------------");
-        System.out.println("PC4:");
         pc4.imprimir();
-        System.out.println("----------------------------");
     }
 }
