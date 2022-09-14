@@ -8,24 +8,24 @@ import java.util.Scanner;
  */
 public class Computador {
 
+    public Computador(int armazenamento, int memoria, String sistema, String processador, String marca) {
+          Computador.armazenamento = armazenamento;
+            Computador.memoria = memoria;
+            Computador.sistema = sistema ;
+            Computador.processador = processador;
+            Computador.marca = marca;
+    }
+
+    //Instanciando scanner
     Scanner sc = new Scanner(System.in);
     //Atributos
-    public int armazenamento,memoria;
-    public String sistema,processador,marca;
+    public static int armazenamento, memoria;
+    public static String sistema, processador, marca;
 
-    //Construtores
     public Computador(){
         
     }
-
-    public Computador(int armazenamento, int memoria, String sistema, String processador, String marca) {
-        this.armazenamento = armazenamento;
-        this.memoria = memoria;
-        this.sistema = sistema;
-        this.processador = processador;
-        this.marca = marca;
-    }
-
+  
     //SET 
     public void setArmazenamento(int armazenamento) {
         this.armazenamento = armazenamento;
@@ -72,29 +72,29 @@ public class Computador {
     public void entradaDados() {
         //ARMAZENAMENTO
         System.out.print("Insira a quantidade de armazenamento do computador: ");
-        armazenamento = Integer.parseInt(sc.nextLine());
+        setArmazenamento(Integer.parseInt(sc.nextLine()));
         //MEMORIA
         System.out.print("Insira a quantidade de memoria do computador: ");
-        memoria = Integer.parseInt(sc.nextLine());
+        setMemoria(Integer.parseInt(sc.nextLine()));
         //SISTEMA
         System.out.print("Insira o sistema operacional do computador: ");
-        sistema = sc.nextLine();
+        setSistema(sc.nextLine());
         //PROCESSADOR
         System.out.print("Insira o processador do computador: ");
-        processador = sc.nextLine();
+        setProcessador(sc.nextLine());
         //MARCA
         System.out.print("Insira a Marca do computador: ");
-        marca = sc.nextLine();
+        setMarca(sc.nextLine());
     }
 
     //SAIDA DE DADOS
     public void imprimir() {
         System.out.println(
-        "\nArmazenamento: " + armazenamento + "GB"
-        + "\nMemoria: " + memoria + " GB"
-        + "\nSistema: " + sistema
-        + "\nProcessador: " + processador
-        + "\nMarca: " + marca
+                "\nArmazenamento: " + armazenamento + "GB"
+                + "\nMemoria: " + memoria + " GB"
+                + "\nSistema: " + sistema
+                + "\nProcessador: " + processador
+                + "\nMarca: " + marca
         );
     }
 }
