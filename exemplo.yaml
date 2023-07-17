@@ -1,0 +1,48 @@
+Insira a quantidade de armazenamento do computador: 500
+Insira a quantidade de memória do computador: 8
+Insira o sistema operacional do computador: Windows 10
+Insira o processador do computador: Intel Core i5
+Insira a Marca do computador: Dell
+------------------------------------
+Insira a quantidade de armazenamento do computador: 1000
+Insira a quantidade de memória do computador: 16
+Insira o sistema operacional do computador: macOS
+Insira o processador do computador: Apple M1
+Insira a Marca do computador: Apple
+------------------------------------
+Insira a quantidade de armazenamento do computador: 250
+Insira a quantidade de memória do computador: 4
+Insira o sistema operacional do computador: Linux
+Insira o processador do computador: AMD Ryzen 5
+Insira a Marca do computador: HP
+------------------------------------
+Insira a quantidade de armazenamento do computador: 500
+Insira a quantidade de memória do computador: 8
+Insira o sistema operacional do computador: Windows 11
+Insira o processador do computador: Intel Core i7
+Insira a Marca do computador: Lenovo
+------------------------------------
+
+Armazenamento: 500GB
+Memória: 8GB
+Sistema: Windows 10
+Processador: Intel Core i5
+Marca: Dell
+
+Armazenamento: 1000GB
+Memória: 16GB
+Sistema: macOS
+Processador: Apple M1
+Marca: Apple
+
+Armazenamento: 250GB
+Memória: 4GB
+Sistema: Linux
+Processador: AMD Ryzen 5
+Marca: HP
+
+Armazenamento: 500GB
+Memória: 8GB
+Sistema: Windows 11
+Processador: Intel Core i7
+Marca: Lenovo
