@@ -1,6 +1,6 @@
 #  Cumputador
 
-##  projeto feito para aprender mais sobre a entrada e saida de dados em java 
+##  Projeto feito para aprender mais sobre a entrada e saida de dados em java 
 
 ### Funcionalidades
 
